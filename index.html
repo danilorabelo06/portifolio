@@ -1,149 +1,1038 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Danilo Rabelo | Portfólio</title>
-<meta name="description" content="Portfólio profissional de Danilo Rabelo — TI, desenvolvimento, dados e BI.">
-<style>
-:root{
-  --bg:#080b12; --panel:#101522; --panel2:#141a29; --text:#f5f7fb;
-  --muted:#9aa5b5; --line:rgba(255,255,255,.09); --accent:#6ee7b7;
-  --accent2:#60a5fa; --max:1180px; --radius:24px;
-}
-*{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:
-radial-gradient(circle at 15% 10%,rgba(96,165,250,.14),transparent 28%),
-radial-gradient(circle at 85% 15%,rgba(110,231,183,.10),transparent 25%),var(--bg);
-color:var(--text);line-height:1.6}
-a{color:inherit;text-decoration:none}
-.container{width:min(calc(100% - 40px),var(--max));margin:auto}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-/* Navegação Superior Aprimorada */
-nav{position:sticky;top:0;z-index:20;background:rgba(8,11,18,.85);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
-.nav{height:76px;display:flex;align-items:center;justify-content:space-between}
-.logo{font-weight:800;font-size:18px;letter-spacing:-0.5px;display:flex;align-items:center;gap:6px}
-.logo-badge{background:linear-gradient(135deg,var(--accent2),var(--accent));color:#090c12;padding:4px 8px;border-radius:8px;font-size:12px;font-weight:900}
-.navlinks{display:flex;gap:24px;color:var(--muted);font-size:14px;font-weight:500}
-.navlinks a{transition:color .2s}
-.navlinks a:hover{color:var(--accent)}
+    <title>Danilo Rabelo | Portfólio</title>
 
-.hero{min-height:calc(100vh - 76px);display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center;padding:80px 0}
-.eyebrow{display:inline-flex;gap:8px;align-items:center;border:1px solid var(--line);background:rgba(255,255,255,.03);padding:8px 12px;border-radius:999px;color:var(--muted);font-size:13px;margin-bottom:22px}
-.dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 16px var(--accent)}
-h1{font-size:clamp(46px,7vw,86px);line-height:.98;letter-spacing:-4px;max-width:800px}
-.gradient{background:linear-gradient(100deg,var(--text),#9ed7ff 45%,var(--accent));-webkit-background-clip:text;background-clip:text;color:transparent}
-.hero p{font-size:18px;color:var(--muted);max-width:690px;margin:26px 0 32px}
-.actions{display:flex;gap:12px;flex-wrap:wrap}.btn{padding:13px 18px;border-radius:14px;border:1px solid var(--line);background:var(--panel);font-weight:700;transition:transform .2s, border-color .2s}.btn.primary{background:var(--text);color:#090c12;border-color:var(--text)}.btn:hover{transform:translateY(-2px);border-color:var(--accent)}
-.hero-card{background:linear-gradient(145deg,rgba(255,255,255,.07),rgba(255,255,255,.02));border:1px solid var(--line);border-radius:32px;padding:24px;box-shadow:0 30px 90px rgba(0,0,0,.35)}
-.profile{display:grid;place-items:center;aspect-ratio:1;border-radius:24px;overflow:hidden;background:
-linear-gradient(135deg,rgba(96,165,250,.16),rgba(110,231,183,.12)),#0d121e;border:1px solid var(--line)}
-.profile img{width:100%;height:100%;object-fit:cover}
-.initials{font-size:110px;font-weight:900;letter-spacing:-8px;background:linear-gradient(135deg,#fff,var(--accent2),var(--accent));-webkit-background-clip:text;color:transparent}
-.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:10px;margin-top:12px}.stat{background:var(--panel);border:1px solid var(--line);padding:14px;border-radius:16px}.stat b{font-size:22px}.stat small{display:block;color:var(--muted)}
-section{padding:95px 0}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:34px}.kicker{color:var(--accent);font-weight:800;text-transform:uppercase;font-size:12px;letter-spacing:2px}.section-head h2{font-size:42px;letter-spacing:-2px;margin-top:8px}.section-head p{color:var(--muted);max-width:520px}
-.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}.card{background:rgba(16,21,34,.8);border:1px solid var(--line);border-radius:var(--radius);padding:25px;transition:.25s}.card:hover{transform:translateY(-5px);border-color:rgba(110,231,183,.3)}
-.about{grid-column:span 7}.focus{grid-column:span 5}.card h3{font-size:22px;margin-bottom:10px}.card p{color:var(--muted)}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.tag{font-size:12px;color:#dbe4ef;border:1px solid var(--line);padding:7px 10px;border-radius:999px;background:rgba(255,255,255,.025)}
-.timeline{position:relative;padding-left:28px}.timeline:before{content:"";position:absolute;left:6px;top:7px;bottom:7px;width:1px;background:var(--line)}.item{position:relative;margin-bottom:28px}.item:before{content:"";position:absolute;left:-26px;top:8px;width:9px;height:9px;border-radius:50%;background:var(--accent)}.item .date{font-size:12px;color:var(--accent)}.item h3{margin:3px 0 4px}.item p{color:var(--muted)}
-.project{grid-column:span 4;min-height:250px;display:flex;flex-direction:column}.project .number{color:var(--accent);font-size:13px;font-weight:800}.project p{margin:10px 0 auto}.project a{margin-top:22px;color:var(--accent);font-weight:700}
-.skills{grid-column:span 6}.certs{grid-column:span 6}.skill{margin:15px 0}.skilltop{display:flex;justify-content:space-between;font-size:14px}.bar{height:7px;background:#1b2332;border-radius:99px;margin-top:7px;overflow:hidden}.fill{height:100%;width:var(--w);background:linear-gradient(90deg,var(--accent2),var(--accent));border-radius:99px}
-.contact{background:linear-gradient(135deg,rgba(96,165,250,.12),rgba(110,231,183,.09));border:1px solid var(--line);border-radius:30px;padding:40px;display:flex;justify-content:space-between;align-items:center;gap:30px}
-footer{padding:35px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
-@media(max-width:850px){.hero{grid-template-columns:1fr;padding:60px 0}.hero-card{max-width:520px}.navlinks{display:none}.about,.focus,.project,.skills,.certs{grid-column:span 12}.section-head{display:block}.section-head p{margin-top:14px}.contact{display:block}h1{letter-spacing:-2px}}
-</style>
+    <meta name="description" content="Portfólio profissional de Danilo Rabelo — TI, desenvolvimento, dados e BI.">
+
+    <style>
+        :root {
+            --bg: #080b12;
+            --panel: #101522;
+            --panel2: #141a29;
+            --text: #f5f7fb;
+            --muted: #9aa5b5;
+            --line: rgba(255,255,255,.09);
+            --accent: #6ee7b7;
+            --accent2: #60a5fa;
+            --max: 1180px;
+            --radius: 24px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+                Segoe UI, sans-serif;
+            background:
+                radial-gradient(circle at 15% 10%, rgba(96,165,250,.14), transparent 28%),
+                radial-gradient(circle at 85% 15%, rgba(110,231,183,.10), transparent 25%),
+                var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .container {
+            width: min(calc(100% - 40px), var(--max));
+            margin: auto;
+        }
+
+        /* Navegação */
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 20;
+            background: rgba(8,11,18,.85);
+            backdrop-filter: blur(18px);
+            border-bottom: 1px solid var(--line);
+        }
+
+        .nav {
+            height: 76px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            font-weight: 800;
+            font-size: 18px;
+            letter-spacing: -.5px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .logo-badge {
+            background: linear-gradient(135deg, var(--accent2), var(--accent));
+            color: #090c12;
+            padding: 4px 8px;
+            border-radius: 8px;
+            font-size: 12px;
+            font-weight: 900;
+        }
+
+        .navlinks {
+            display: flex;
+            gap: 24px;
+            color: var(--muted);
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .navlinks a {
+            transition: color .2s;
+        }
+
+        .navlinks a:hover {
+            color: var(--accent);
+        }
+
+        /* Apresentação */
+        .hero {
+            min-height: calc(100vh - 76px);
+            display: grid;
+            grid-template-columns: 1.15fr .85fr;
+            gap: 50px;
+            align-items: center;
+            padding: 80px 0;
+        }
+
+        .eyebrow {
+            display: inline-flex;
+            gap: 8px;
+            align-items: center;
+            border: 1px solid var(--line);
+            background: rgba(255,255,255,.03);
+            padding: 8px 12px;
+            border-radius: 999px;
+            color: var(--muted);
+            font-size: 13px;
+            margin-bottom: 22px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent);
+            box-shadow: 0 0 16px var(--accent);
+        }
+
+        h1 {
+            font-size: clamp(46px, 7vw, 86px);
+            line-height: .98;
+            letter-spacing: -4px;
+            max-width: 800px;
+        }
+
+        .gradient {
+            background: linear-gradient(100deg, var(--text), #9ed7ff 45%, var(--accent));
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--muted);
+            max-width: 690px;
+            margin: 26px 0 32px;
+        }
+
+        .actions {
+            display: flex;
+            gap: 12px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            padding: 13px 18px;
+            border-radius: 14px;
+            border: 1px solid var(--line);
+            background: var(--panel);
+            font-weight: 700;
+            transition: transform .2s, border-color .2s;
+        }
+
+        .btn.primary {
+            background: var(--text);
+            color: #090c12;
+            border-color: var(--text);
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            border-color: var(--accent);
+        }
+
+        .hero-card {
+            background: linear-gradient(145deg, rgba(255,255,255,.07), rgba(255,255,255,.02));
+            border: 1px solid var(--line);
+            border-radius: 32px;
+            padding: 24px;
+            box-shadow: 0 30px 90px rgba(0,0,0,.35);
+        }
+
+        .profile {
+            display: grid;
+            place-items: center;
+            aspect-ratio: 1;
+            border-radius: 24px;
+            overflow: hidden;
+            background: linear-gradient(135deg, rgba(96,165,250,.16), rgba(110,231,183,.12)), #0d121e;
+            border: 1px solid var(--line);
+        }
+
+        .profile img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .initials {
+            font-size: 110px;
+            font-weight: 900;
+            letter-spacing: -8px;
+            background: linear-gradient(135deg, #fff, var(--accent2), var(--accent));
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+            margin-top: 12px;
+        }
+
+        .stat {
+            background: var(--panel);
+            border: 1px solid var(--line);
+            padding: 14px;
+            border-radius: 16px;
+        }
+
+        .stat b {
+            font-size: 22px;
+        }
+
+        .stat small {
+            display: block;
+            color: var(--muted);
+        }
+
+        /* Seções */
+        section {
+            padding: 95px 0;
+        }
+
+        .section-head {
+            display: flex;
+            justify-content: space-between;
+            gap: 30px;
+            align-items: end;
+            margin-bottom: 34px;
+        }
+
+        .kicker {
+            color: var(--accent);
+            font-weight: 800;
+            text-transform: uppercase;
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .section-head h2 {
+            font-size: 42px;
+            letter-spacing: -2px;
+            margin-top: 8px;
+        }
+
+        .section-head p {
+            color: var(--muted);
+            max-width: 520px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+
+        .card {
+            background: rgba(16,21,34,.8);
+            border: 1px solid var(--line);
+            border-radius: var(--radius);
+            padding: 25px;
+            transition: .25s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(110,231,183,.3);
+        }
+
+        .about {
+            grid-column: span 7;
+        }
+
+        .focus {
+            grid-column: span 5;
+        }
+
+        .card h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: var(--muted);
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-top: 18px;
+        }
+
+        .tag {
+            font-size: 12px;
+            color: #dbe4ef;
+            border: 1px solid var(--line);
+            padding: 7px 10px;
+            border-radius: 999px;
+            background: rgba(255,255,255,.025);
+        }
+
+        /* Experiência */
+        .timeline {
+            position: relative;
+            padding-left: 28px;
+        }
+
+        .timeline:before {
+            content: "";
+            position: absolute;
+            left: 6px;
+            top: 7px;
+            bottom: 7px;
+            width: 1px;
+            background: var(--line);
+        }
+
+        .item {
+            position: relative;
+            margin-bottom: 28px;
+        }
+
+        .item:last-child {
+            margin-bottom: 0;
+        }
+
+        .item:before {
+            content: "";
+            position: absolute;
+            left: -26px;
+            top: 8px;
+            width: 9px;
+            height: 9px;
+            border-radius: 50%;
+            background: var(--accent);
+        }
+
+        .item .date {
+            font-size: 12px;
+            color: var(--accent);
+        }
+
+        .item h3 {
+            margin: 3px 0 4px;
+        }
+
+        .item p {
+            color: var(--muted);
+        }
+
+        /* Projetos */
+        .project {
+            grid-column: span 6;
+            min-height: 320px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .project .number {
+            color: var(--accent);
+            font-size: 13px;
+            font-weight: 800;
+        }
+
+        .project h3 {
+            margin-top: 10px;
+        }
+
+        .project p {
+            margin: 10px 0 0;
+        }
+
+        .project .tags {
+            margin-top: 16px;
+            margin-bottom: 4px;
+        }
+
+        .project-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 18px;
+            margin-top: auto;
+            padding-top: 24px;
+        }
+
+        .project-links a {
+            color: var(--accent);
+            font-weight: 700;
+            font-size: 14px;
+            transition: color .2s;
+        }
+
+        .project-links a:hover {
+            color: var(--text);
+        }
+
+        /* Conhecimentos */
+        .skills {
+            grid-column: span 6;
+        }
+
+        .certs {
+            grid-column: span 6;
+        }
+
+        .skill {
+            margin: 15px 0;
+        }
+
+        .skilltop {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+        }
+
+        .bar {
+            height: 7px;
+            background: #1b2332;
+            border-radius: 99px;
+            margin-top: 7px;
+            overflow: hidden;
+        }
+
+        .fill {
+            height: 100%;
+            width: var(--w);
+            background: linear-gradient(90deg, var(--accent2), var(--accent));
+            border-radius: 99px;
+        }
+
+        /* Contato e rodapé */
+        .contact {
+            background: linear-gradient(135deg, rgba(96,165,250,.12), rgba(110,231,183,.09));
+            border: 1px solid var(--line);
+            border-radius: 30px;
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 30px;
+        }
+
+        footer {
+            padding: 35px 0;
+            border-top: 1px solid var(--line);
+            color: var(--muted);
+            font-size: 13px;
+        }
+
+        /* Responsividade */
+        @media (max-width: 850px) {
+            .hero {
+                grid-template-columns: 1fr;
+                padding: 60px 0;
+            }
+
+            .hero-card {
+                max-width: 520px;
+            }
+
+            .navlinks {
+                display: none;
+            }
+
+            .about,
+            .focus,
+            .project,
+            .skills,
+            .certs {
+                grid-column: span 12;
+            }
+
+            .section-head {
+                display: block;
+            }
+
+            .section-head p {
+                margin-top: 14px;
+            }
+
+            .contact {
+                display: block;
+            }
+
+            .contact .actions {
+                margin-top: 24px;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+            }
+
+            .section-head h2 {
+                font-size: 34px;
+            }
+        }
+    </style>
 </head>
+
 <body>
 
-<nav>
-  <div class="container nav">
-    <a class="logo" href="#">
-      <span class="logo-badge">DR</span> Danilo Rabelo
-    </a>
-    <div class="navlinks">
-      <a href="#sobre">Sobre</a>
-      <a href="#experiencia">Experiência</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#skills">Conhecimentos</a>
-      <a href="#perfil">Perfil</a>
-      <a href="#contato">Contato</a>
-    </div>
-  </div>
-</nav>
+    <!-- NAVEGAÇÃO -->
+    <nav>
+        <div class="container nav">
+            <a class="logo" href="#">
+                <span class="logo-badge">DR</span>
+                Danilo Rabelo
+            </a>
 
-<header class="container hero">
-  <div>
-    <h1>Danilo <span class="gradient">Rabelo</span></h1>
-    <p>Estudante de Análise e Desenvolvimento de Sistemas na FSA e profissional de Service Desk na Tecnocomp.</p>
-    <div class="actions">
-      <a class="btn primary" href="#projetos">Ver projetos</a>
-      <a class="btn" href="https://www.linkedin.com/in/danilo-rabelo-1b6387349/" target="_blank">LinkedIn ↗</a>
-    </div>
-  </div>
-  <div class="hero-card">
-    <div class="profile"><img src="foto-perfil.jpg" alt="Foto de Danilo Rabelo"></div>
-    <div class="stats">
-      <div class="stat"><b>ADS</b><small>Formação · FSA</small></div>
-      <div class="stat"><b>Service Desk</b><small>Emprego · Tecnocomp</small></div>
-    </div>
-  </div>
-</header>
+            <div class="navlinks">
+                <a href="#sobre">Sobre</a>
+                <a href="#experiencia">Experiência</a>
+                <a href="#projetos">Projetos</a>
+                <a href="#skills">Conhecimentos</a>
+                <a href="#perfil">Perfil</a>
+                <a href="#contato">Contato</a>
+            </div>
+        </div>
+    </nav>
 
-<section id="sobre"><div class="container">
-  <div class="section-head"><div><div class="kicker">01 · Sobre</div><h2>Construindo minha trajetória em tecnologia.</h2></div><p>Uma combinação de experiência prática, formação acadêmica e curiosidade para aprender novas ferramentas.</p></div>
-  <div class="grid">
-    <article class="card about"><h3>Quem sou</h3><p>Sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Fundação Santo André. Atualmente atuo no Service Desk da Tecnocomp, prestando suporte a colaboradores e trabalhando com software, hardware, ferramentas Microsoft e recursos em nuvem.</p><div class="tags"><span class="tag">Tecnologia</span><span class="tag">Suporte Técnico</span><span class="tag">Desenvolvimento</span><span class="tag">Dados</span><span class="tag">BI</span><span class="tag">Melhoria de processos</span></div></article>
-    <article class="card focus"><h3>O que busco</h3><p>Continuar desenvolvendo minha base técnica, transformar conhecimentos acadêmicos em projetos práticos e crescer profissionalmente em tecnologia, explorando desenvolvimento, análise de dados e Business Intelligence.</p></article>
-  </div>
-</div></section>
+    <!-- APRESENTAÇÃO -->
+    <header class="container hero">
+        <div>
+            <h1>Danilo <span class="gradient">Rabelo</span></h1>
 
-<section id="experiencia"><div class="container">
-  <div class="section-head"><div><div class="kicker">02 · Experiência</div><h2>Experiência prática.</h2></div><p>Atuação atual em ambiente corporativo de TI.</p></div>
-  <div class="card timeline">
-    <div class="item"><div class="date">ATUAL · TECNOCOMP</div><h3>Estagiário de TI · Service Desk</h3><p>Atendimento e suporte aos colaboradores; resolução de problemas técnicos; instalação e configuração de softwares; suporte a hardware e impressoras; ferramentas Microsoft e contato com recursos em nuvem, como Microsoft Azure; acompanhamento de chamados.</p></div>
-    <div class="item"><div class="date">FORMAÇÃO · FSA</div><h3>Análise e Desenvolvimento de Sistemas</h3><p>Formação com estudos em programação, banco de dados, análise de dados, Power BI, inteligência artificial, redes, segurança da informação e desenvolvimento de software.</p></div>
-  </div>
-</div></section>
+            <p>
+                Estudante de Análise e Desenvolvimento de Sistemas na FSA
+                e profissional de Service Desk na Tecnocomp.
+            </p>
 
-<section id="projetos"><div class="container">
-  <div class="section-head"><div><div class="kicker">03 · Projetos</div><h2>Projetos que mostram aprendizado.</h2></div></div>
-  <div class="grid">
-    <article class="card project"><span class="number">01 · ACADÊMICO</span><h3>Caminho das Letras</h3><p>Projeto acadêmico da FSA para desenvolvimento de um site interativo voltado à alfabetização infantil, com atividades lúdicas, jogos pedagógicos e conteúdos adaptados. O projeto considera usabilidade, acessibilidade, UX e coleta de dados.</p><p style="margin-top:14px;color:#dbe4ef">Em andamento · aplicação e avaliação previstas para o final de 2026.</p><a href="#">Projeto acadêmico →</a></article>
-  </div>
-</div></section>
+            <div class="actions">
+                <a class="btn primary" href="#projetos">Ver projetos</a>
 
-<section id="skills"><div class="container">
-  <div class="section-head"><div><div class="kicker">04 · Conhecimentos</div><h2>Ferramentas & competências.</h2></div><p>Conhecimentos acadêmicos, profissionais e cursos realizados.</p></div>
-  <div class="grid">
-    <article class="card skills">
-      <h3>Principais conhecimentos</h3>
-      <div class="skill"><div class="skilltop"><span>HTML / CSS</span><span>Principal</span></div><div class="bar"><div class="fill" style="--w:78%"></div></div></div>
-      <div class="skill"><div class="skilltop"><span>Python</span><span>Em desenvolvimento</span></div><div class="bar"><div class="fill" style="--w:65%"></div></div></div>
-      <div class="skill"><div class="skilltop"><span>Power BI</span><span>Acadêmico / BI</span></div><div class="bar"><div class="fill" style="--w:68%"></div></div></div>
-      <div class="skill"><div class="skilltop"><span>Suporte Técnico</span><span>Experiência prática</span></div><div class="bar"><div class="fill" style="--w:82%"></div></div></div>
-      <div class="tags"><span class="tag">Microsoft 365</span><span class="tag">Azure</span><span class="tag">Excel Avançado</span><span class="tag">Banco de Dados</span><span class="tag">Redes</span><span class="tag">Segurança</span><span class="tag">IA</span><span class="tag">Java · fundamentos</span></div>
-    </article>
-    <article class="card certs"><h3>Competências complementares</h3><p>Comunicação, trabalho em equipe, relacionamento com clientes, análise de dados, análise de negócios, gestão de projetos, planejamento estratégico, inovação empresarial e uso de ferramentas de IA.</p><div class="tags"><span class="tag">Cambridge English B1</span><span class="tag">Análise de Dados com IA</span><span class="tag">Machine Learning · fundamentos</span><span class="tag">Visão Computacional</span><span class="tag">Empreendedorismo</span></div></article>
-  </div>
-</div></section>
+                <a
+                    class="btn"
+                    href="https://www.linkedin.com/in/danilo-rabelo-1b6387349/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    LinkedIn ↗
+                </a>
+            </div>
+        </div>
 
-<section id="perfil"><div class="container">
-  <div class="section-head"><div><div class="kicker">05 · Perfil</div><h2>Como eu trabalho.</h2></div><p>Um pouco além das ferramentas: organização, colaboração, comunicação e uma forma prática de aprender.</p></div>
-  <div class="grid">
-    <article class="card about"><h3>Meu estilo</h3><p>Meu perfil é bastante voltado ao trabalho em equipe, relacionamento e colaboração. Gosto de apoiar colegas, manter uma comunicação próxima e contribuir para que o trabalho avance de forma organizada. Também valorizo ambientes com funções claras, processos bem definidos e espaço para aprender na prática.</p><div class="tags"><span class="tag">Sociável</span><span class="tag">Tolerante</span><span class="tag">Independente</span><span class="tag">Criativo</span><span class="tag">Colaborativo</span><span class="tag">Organizado</span></div></article>
-    <article class="card focus"><h3>Como aprendo</h3><p>Aprendo melhor experimentando: gosto de ver um caso concreto, testar conceitos, entender o resultado e ajustar quando necessário. Tenho uma abordagem racional para decisões e procuro validar as informações antes de concluir.</p></article>
-    <article class="card focus"><h3>Meus pontos fortes</h3><p>Resolução de problemas, relacionamento com pessoas, comunicação, proposição de ideias, organização do trabalho e capacidade de analisar situações de forma conceitual e racional.</p></article>
-    <article class="card about"><h3>Competências profissionais</h3><div class="tags"><span class="tag">Resolução de problemas</span><span class="tag">Assistência técnica</span><span class="tag">Suporte técnico</span><span class="tag">Manutenção de sistemas</span><span class="tag">Instalação de software</span><span class="tag">Configuração de rede</span><span class="tag">Gerenciamento de incidentes</span><span class="tag">Trabalho em equipe</span><span class="tag">Comunicação</span><span class="tag">Organização</span><span class="tag">Análise</span><span class="tag">Coordenação</span></div></article>
-    <article class="card focus"><h3>O que me motiva</h3><p>Trabalhar de maneira disciplinada, ter funções claramente definidas e atuar em um ambiente informal, estruturado e colaborativo, no qual seja possível acompanhar o progresso e contribuir com o coletivo.</p></article>
-    <article class="card focus"><h3>Idiomas</h3><p><strong>English (US)</strong><br><span style="color:var(--muted)">Proficiente - Certificado de Cambridge.</span></p></article>
-  </div>
-</div></section>
+        <div class="hero-card">
+            <div class="profile">
+                <img src="foto-perfil.jpg" alt="Foto de Danilo Rabelo">
+            </div>
 
-<section id="contato"><div class="container">
-  <div class="contact"><div><div class="kicker">06 · Contato</div><h2 style="margin-top:8px">Vamos conversar?</h2><p style="color:var(--muted);margin-top:8px">Estou aberto a oportunidades, projetos e conexões na área de tecnologia.</p></div><div class="actions"><a class="btn primary" href="mailto:seuemail@email.com">Enviar e-mail</a><a class="btn" href="https://github.com/" target="_blank">GitHub ↗</a></div></div>
-</div></section>
+            <div class="stats">
+                <div class="stat">
+                    <b>ADS</b>
+                    <small>Formação · FSA</small>
+                </div>
 
-<footer><div class="container">© 2026 Danilo Rabelo · Portfólio profissional</div></footer>
+                <div class="stat">
+                    <b>Service Desk</b>
+                    <small>Emprego · Tecnocomp</small>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- SOBRE -->
+    <section id="sobre">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="kicker">01 · Sobre</div>
+                    <h2>Construindo minha trajetória em tecnologia.</h2>
+                </div>
+
+                <p>
+                    Uma combinação de experiência prática, formação acadêmica
+                    e curiosidade para aprender novas ferramentas.
+                </p>
+            </div>
+
+            <div class="grid">
+                <article class="card about">
+                    <h3>Quem sou</h3>
+
+                    <p>
+                        Sou estudante de Análise e Desenvolvimento de Sistemas
+                        no Centro Universitário Fundação Santo André.
+                        Atualmente atuo no Service Desk da Tecnocomp, prestando
+                        suporte a colaboradores e trabalhando com software,
+                        hardware, ferramentas Microsoft e recursos em nuvem.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Tecnologia</span>
+                        <span class="tag">Suporte Técnico</span>
+                        <span class="tag">Desenvolvimento</span>
+                        <span class="tag">Dados</span>
+                        <span class="tag">BI</span>
+                        <span class="tag">Melhoria de processos</span>
+                    </div>
+                </article>
+
+                <article class="card focus">
+                    <h3>O que busco</h3>
+
+                    <p>
+                        Continuar desenvolvendo minha base técnica, transformar
+                        conhecimentos acadêmicos em projetos práticos e crescer
+                        profissionalmente em tecnologia, explorando
+                        desenvolvimento, análise de dados e Business Intelligence.
+                    </p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIÊNCIA -->
+    <section id="experiencia">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="kicker">02 · Experiência</div>
+                    <h2>Experiência prática.</h2>
+                </div>
+
+                <p>Atuação atual em ambiente corporativo de TI.</p>
+            </div>
+
+            <div class="card timeline">
+
+                <div class="item">
+                    <div class="date">ATUAL · TECNOCOMP</div>
+
+                    <h3>Estagiário de TI · Service Desk</h3>
+
+                    <p>
+                        Atendimento e suporte aos colaboradores; resolução
+                        de problemas técnicos; instalação e configuração
+                        de softwares; suporte a hardware e impressoras;
+                        ferramentas Microsoft e contato com recursos em nuvem,
+                        como Microsoft Azure; acompanhamento de chamados.
+                    </p>
+                </div>
+
+                <div class="item">
+                    <div class="date">FORMAÇÃO · FSA</div>
+
+                    <h3>Análise e Desenvolvimento de Sistemas</h3>
+
+                    <p>
+                        Formação com estudos em programação, banco de dados,
+                        análise de dados, Power BI, inteligência artificial,
+                        redes, segurança da informação e desenvolvimento
+                        de software.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJETOS -->
+    <section id="projetos">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="kicker">03 · Projetos</div>
+                    <h2>Projetos que mostram aprendizado.</h2>
+                </div>
+            </div>
+
+            <div class="grid">
+
+                <!-- PROJETO 1: CAMINHO DAS LETRAS -->
+                <article class="card project">
+
+                    <span class="number">01 · ACADÊMICO</span>
+
+                    <h3>Caminho das Letras</h3>
+
+                    <p>
+                        Projeto acadêmico da FSA para desenvolvimento de um
+                        site interativo voltado à alfabetização infantil,
+                        com atividades lúdicas, jogos pedagógicos e conteúdos
+                        adaptados. O projeto considera usabilidade,
+                        acessibilidade, UX e coleta de dados.
+                    </p>
+
+                    <p style="margin-top: 14px; color: #dbe4ef;">
+                        Em andamento · aplicação e avaliação previstas
+                        para o final de 2026.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Desenvolvimento Web</span>
+                        <span class="tag">UX/UI</span>
+                        <span class="tag">Acessibilidade</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a href="#" target="_blank" rel="noopener noreferrer">
+                            Projeto acadêmico ↗
+                        </a>
+                    </div>
+
+                </article>
+
+                <!-- PROJETO 2: CINEVERSE -->
+                <article class="card project">
+
+                    <span class="number">02 · PROJETO PESSOAL</span>
+
+                    <h3>Cineverse — Catálogo de Filmes</h3>
+
+                    <p>
+                        Projeto pessoal de desenvolvimento web que apresenta
+                        um catálogo de filmes com interface temática,
+                        navegação entre títulos e organização por gêneros.
+                        Desenvolvido com HTML, CSS e JavaScript, o projeto
+                        explora interatividade, organização de conteúdo
+                        e design responsivo.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Design Responsivo</span>
+                        <span class="tag">GitHub Pages</span>
+                    </div>
+
+                    <div class="project-links">
+                        <a
+                            href="https://danilorabelo06.github.io/cineverse/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Ver projeto ↗
+                        </a>
+
+                        <a
+                            href="https://github.com/danilorabelo06/cineverse"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Código no GitHub ↗
+                        </a>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONHECIMENTOS -->
+    <section id="skills">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="kicker">04 · Conhecimentos</div>
+                    <h2>Ferramentas & competências.</h2>
+                </div>
+
+                <p>
+                    Conhecimentos acadêmicos, profissionais e cursos realizados.
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card skills">
+
+                    <h3>Principais conhecimentos</h3>
+
+                    <div class="skill">
+                        <div class="skilltop">
+                            <span>HTML / CSS</span>
+                            <span>Principal</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="fill" style="--w:78%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skilltop">
+                            <span>Python</span>
+                            <span>Em desenvolvimento</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="fill" style="--w:65%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skilltop">
+                            <span>Power BI</span>
+                            <span>Acadêmico / BI</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="fill" style="--w:68%"></div>
+                        </div>
+                    </div>
+
+                    <div class="skill">
+                        <div class="skilltop">
+                            <span>Suporte Técnico</span>
+                            <span>Experiência prática</span>
+                        </div>
+
+                        <div class="bar">
+                            <div class="fill" style="--w:82%"></div>
+                        </div>
+                    </div>
+
+                    <div class="tags">
+                        <span class="tag">Microsoft 365</span>
+                        <span class="tag">Azure</span>
+                        <span class="tag">Excel Avançado</span>
+                        <span class="tag">Banco de Dados</span>
+                        <span class="tag">Redes</span>
+                        <span class="tag">Segurança</span>
+                        <span class="tag">IA</span>
+                        <span class="tag">Java · fundamentos</span>
+                    </div>
+
+                </article>
+
+                <article class="card certs">
+
+                    <h3>Competências complementares</h3>
+
+                    <p>
+                        Comunicação, trabalho em equipe, relacionamento com
+                        clientes, análise de dados, análise de negócios,
+                        gestão de projetos, planejamento estratégico,
+                        inovação empresarial e uso de ferramentas de IA.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Cambridge English B1</span>
+                        <span class="tag">Análise de Dados com IA</span>
+                        <span class="tag">Machine Learning · fundamentos</span>
+                        <span class="tag">Visão Computacional</span>
+                        <span class="tag">Empreendedorismo</span>
+                    </div>
+
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- PERFIL -->
+    <section id="perfil">
+        <div class="container">
+
+            <div class="section-head">
+                <div>
+                    <div class="kicker">05 · Perfil</div>
+                    <h2>Como eu trabalho.</h2>
+                </div>
+
+                <p>
+                    Um pouco além das ferramentas: organização, colaboração,
+                    comunicação e uma forma prática de aprender.
+                </p>
+            </div>
+
+            <div class="grid">
+
+                <article class="card about">
+                    <h3>Meu estilo</h3>
+
+                    <p>
+                        Meu perfil é bastante voltado ao trabalho em equipe,
+                        relacionamento e colaboração. Gosto de apoiar colegas,
+                        manter uma comunicação próxima e contribuir para que
+                        o trabalho avance de forma organizada. Também valorizo
+                        ambientes com funções claras, processos bem definidos
+                        e espaço para aprender na prática.
+                    </p>
+
+                    <div class="tags">
+                        <span class="tag">Sociável</span>
+                        <span class="tag">Tolerante</span>
+                        <span class="tag">Independente</span>
+                        <span class="tag">Criativo</span>
+                        <span class="tag">Colaborativo</span>
+                        <span class="tag">Organizado</span>
+                    </div>
+                </article>
+
+                <article class="card focus">
+                    <h3>Como aprendo</h3>
+
+                    <p>
+                        Aprendo melhor experimentando: gosto de ver um caso
+                        concreto, testar conceitos, entender o resultado
+                        e ajustar quando necessário. Tenho uma abordagem
+                        racional para decisões e procuro validar as
+                        informações antes de concluir.
+                    </p>
+                </article>
+
+                <article class="card focus">
+                    <h3>Meus pontos fortes</h3>
+
+                    <p>
+                        Resolução de problemas, relacionamento com pessoas,
+                        comunicação, proposição de ideias, organização do
+                        trabalho e capacidade de analisar situações de forma
+                        conceitual e racional.
+                    </p>
+                </article>
+
+                <article class="card about">
+                    <h3>Competências profissionais</h3>
+
+                    <div class="tags">
+                        <span class="tag">Resolução de problemas</span>
+                        <span class="tag">Assistência técnica</span>
+                        <span class="tag">Suporte técnico</span>
+                        <span class="tag">Manutenção de sistemas</span>
+                        <span class="tag">Instalação de software</span>
+                        <span class="tag">Configuração de rede</span>
+                        <span class="tag">Gerenciamento de incidentes</span>
+                        <span class="tag">Trabalho em equipe</span>
+                        <span class="tag">Comunicação</span>
+                        <span class="tag">Organização</span>
+                        <span class="tag">Análise</span>
+                        <span class="tag">Coordenação</span>
+                    </div>
+                </article>
+
+                <article class="card focus">
+                    <h3>O que me motiva</h3>
+
+                    <p>
+                        Trabalhar de maneira disciplinada, ter funções
+                        claramente definidas e atuar em um ambiente informal,
+                        estruturado e colaborativo, no qual seja possível
+                        acompanhar o progresso e contribuir com o coletivo.
+                    </p>
+                </article>
+
+                <article class="card focus">
+                    <h3>Idiomas</h3>
+
+                    <p>
+                        <strong>English (US)</strong><br>
+                        <span style="color: var(--muted);">
+                            Proficiente - Certificado de Cambridge.
+                        </span>
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTATO -->
+    <section id="contato">
+        <div class="container">
+
+            <div class="contact">
+
+                <div>
+                    <div class="kicker">06 · Contato</div>
+
+                    <h2 style="margin-top: 8px;">
+                        Vamos conversar?
+                    </h2>
+
+                    <p style="color: var(--muted); margin-top: 8px;">
+                        Estou aberto a oportunidades, projetos e conexões
+                        na área de tecnologia.
+                    </p>
+                </div>
+
+                <div class="actions">
+                    <a class="btn primary" href="mailto:danilomrabelo1@gmail.com">
+                        Enviar e-mail
+                    </a>
+
+                    <a
+                        class="btn"
+                        href="https://github.com/danilorabelo06"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        GitHub ↗
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            © 2026 Danilo Rabelo · Portfólio profissional
+        </div>
+    </footer>
+
 </body>
 </html>
